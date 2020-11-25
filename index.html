@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"></Link>
+    <Link rel="stylesheet" href="css/all.min.css"></Link>
     <Link rel="stylesheet" href="css/normalize.css"></Link>
     <Link rel="stylesheet" href="css/master.css"></Link>
 </head>
 <body>
+    <!-- Start Settings Box  -->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i class="fas fa-cog fa-lg" ></i>
+        </div>
+        <div class="settings-container">
+            <div class="colors-box">
+                <h3>Colors</h3>
+                <ul class="colors-list">
+                    <li class="active" data-color="#ff9800"></li>
+                    <li data-color="#e91e63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#03a9f4"></li>
+                    <li data-color="#4caf50"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Settings Box  -->
+
     <!-- Start Landing page  -->
     <div class="landing-page">
         <div class="overlay"></div>
         <div class="header-area">
-            <div class="logo">Special Desgin</div>
+            <div class="logo"><span>Special</span> Desgin</div>
             <ul class="links">
                 <li><a href="#" class="active">About</a></li>
                 <li><a href="#">Service</a></li>
