@@ -22,7 +22,7 @@ body {
     background-color:#fff;
     width: 35vh;
     height: 100vh;
-    z-index: 3;
+    z-index: 8;
     transition: 0.5s;
     align-items: center;
 }
@@ -32,9 +32,9 @@ body {
 
 .settings-box .toggle-settings {
     border: 3px solid ;
-    border-color: #eee #eee #eee transparent;
+    border-color: #DDD #DDD #DDD #DDD;
     position: absolute;
-    right: -50px;
+    right: -70px;
     top: 100px;
     background-color: #fff;
     cursor: pointer;
@@ -43,6 +43,7 @@ body {
 }
 .settings-box.open .toggle-settings{
     border-radius: 0 45% 45% 0;
+    border-color: #eee #eee #eee transparent;
     right: -40px;
 }
 .settings-box .toggle-settings .fa-cog {
