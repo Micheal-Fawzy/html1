@@ -162,8 +162,8 @@ window.onscroll = function () {
             let dataSkill = skill.dataset.progress;
             skill.style.width = dataSkill;
         }
-        // let bMusic = new Audio("/anxious-586.mp3");
-	    // bMusic.play();
+         let bMusic = new Audio("https://raw.githubusercontent.com/Micheal-Fawzy/html1/main/anxious-586.mp3");
+	     bMusic.play();
     };
 
     // this.console.log(skillsOffset);
