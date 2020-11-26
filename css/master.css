@@ -403,6 +403,17 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+.timeline .timeline-content .content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg) bottom center;
+    background-size: 150%;
+}
 .timeline .timeline-content:before {
     content: ' ';
     width: 2px;
