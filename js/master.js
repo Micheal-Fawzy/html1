@@ -142,6 +142,7 @@ function setBubble(range, bubble) {
 
 // Skills
 let ourSkills = document.querySelector(".skills");
+var executed = false;
 
 window.onscroll = function () {
     // skills offset top
@@ -155,15 +156,15 @@ window.onscroll = function () {
 
     // Window Scroll top
     let windowScrollTop = this.pageYOffset;
-
-    if(windowScrollTop > (skillsOffsetTop + skillsOuterHeight - windowHeight)){
+    if(windowScrollTop > (skillsOffsetTop + skillsOuterHeight - windowHeight) && !executed){
         let allSkills = document.querySelectorAll('.skills span');
         for (skill of allSkills) {
             let dataSkill = skill.dataset.progress;
             skill.style.width = dataSkill;
         }
-         let bMusic = new Audio("https://raw.githubusercontent.com/Micheal-Fawzy/html1/main/anxious-586.mp3");
-	     bMusic.play();
+        let bMusic = new Audio("https://raw.githubusercontent.com/Micheal-Fawzy/html1/main/anxious-586.mp3");
+        bMusic.play();
+        executed = true;
     };
 
     // this.console.log(skillsOffset);
